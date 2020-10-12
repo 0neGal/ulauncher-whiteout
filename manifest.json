@@ -1,0 +1,12 @@
+{
+	"name": "whiteout",
+	"extend_theme": null,
+	"manifest_version": "1",
+	"css_file": "theme.css",
+	"display_name": "Whiteout",
+	"css_file_gtk_3.20+": "theme.css",
+	"matched_text_hl_colors": {
+		"when_selected": "#81a2be",
+		"when_not_selected": "#81a2be"
+	}
+}

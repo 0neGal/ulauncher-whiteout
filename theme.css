@@ -1,0 +1,73 @@
+@import url("./reset.css");
+
+.app {
+	margin: 0px;
+	opacity: 0.0;
+	font-weight: 700;
+	border-radius: 12px;
+	animation-name: fade;
+	animation-delay: 0.1s;
+	animation-duration: 0.3s;
+	background-color: #ffffff;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes fade {
+	from {box-shadow: none;}
+	to {box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);opacity: 1.0;}
+}
+
+.input {
+	color: #373b41;
+	font-size: 170%;
+	padding: 5px 0 5px 7px;
+}
+
+.input *:selected, .input *:focus, *:selected:focus {
+	color: #ffffff;
+	background-color: #81a2be;
+}
+
+.item-text {
+	color: @item_text;
+}
+.item-name {
+	color: #c5c8c6;
+	font-size: 120%;
+}
+
+.item-box {
+	background-color: #ffffff;
+}
+
+.selected.item-box .item-text, .selected.item-box .item-shortcut {
+	color: #373b41;
+}
+
+.item-box .item-name, .item-text, .item-shortcut {
+	color: #c5c8c6;
+	transition: 0.3s color ease-in-out;
+}
+
+.item-descr {
+	font-size: 80%;
+}
+
+.prefs-btn {
+	opacity: 0.5;
+	border-radius: 50px;
+	transition: 0.3s background-color ease-in-out;
+}
+
+.prefs-btn:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.prefs-btn:active {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.input {
+    caret-color: #373b41;
+}
